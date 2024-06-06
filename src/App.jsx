@@ -5,6 +5,7 @@ import viteLogo from "/vite.svg";
 
 function App() {
     document.title = "RBB Quick Score";
+    document.body.classList = "bg-slate-800";
 
     const [test1, setTest1] = useState(0);
     const [test2, setTest2] = useState({
@@ -47,9 +48,9 @@ function App() {
 
     return (
         <>
-            <div className="min-h-screen flex items-center justify-center bg-slate-800">
-                <div className="flex-col w-4/5 lg:w-1/3">
-                    <div className="mt-4 bg-white p-2 rounded-lg shadow-lg mb-4">
+            <div className="flex items-center justify-center">
+                <div className="w-full flex-col">
+                    <div className="w-max-full mx-5 lg:w-1/3 lg:mx-auto mt-4 bg-white p-2 rounded-lg shadow-lg mb-4">
                         <h1 className="font-bold text-center text-cyan-700">
                             RBB Quick Score
                         </h1>
@@ -59,7 +60,7 @@ function App() {
                             </p>
                         </small>
                     </div>
-                    <div className="bg-white p-4 rounded-lg shadow-lg">
+                    <div className="w-max-full mx-5 lg:w-1/3 lg:mx-auto bg-white p-4 rounded-lg shadow-lg">
                         <form className="space-y-4">
                             <div>
                                 <label className="block mb-1 font-semibold">
